@@ -15,7 +15,7 @@ def get_weather_info(date, latitude=52.23, longitude=21.01):
         return cache[date]
 
     print("Pobieram dane z API")
-    url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=rain&daily=rain_sum&timezone=Europe%2FLondon&start_date={date}&end_date={date}"
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&hourly=rain&daily=rain_sum&timezone=Europe/Warsaw&start_date={date}&end_date={date}"
 
     response = requests.get(url)
 
